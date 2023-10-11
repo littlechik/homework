@@ -1,0 +1,48 @@
+x= input(int)
+result=[]
+a,b=0,1
+for i in range(int(x)):
+    result.append(a)
+    a,b=b,a+b
+print(result)
+
+
+"""(一般呼叫 , 位置指定呼叫 , 關鍵字指定)"""
+
+def comba(x ,y=0,/ , *,b=0 ):   
+    print(x,y,b)
+
+comba(4)
+"""錯誤呼叫(4,y=7) """
+comba(4,7) 
+"""錯誤呼叫(4,y=7,6)"""
+comba(4,8,b=9)
+
+
+"""資料結構"""
+primes_list = [2, 3, 5, 7, 11]
+primes_tuple = (2, 3, 5, 7, 11)
+primes_dict = {
+    "1st": 2,
+    "2nd": 3,
+    "3rd": 5,
+    "4th": 7,
+    "5th": 11
+}
+primes_set = {2, 3, 5, 7, 11}
+
+"""list"""
+import random
+
+abc=list()
+for i in range(10):
+    integer =random.randint(1,100) 
+    abc.append(integer)
+print(abc.pop(-3))
+
+ 
+
+def binarytree(x):
+    x=random.randint(1,100)
+    abc.append(x)
+    
